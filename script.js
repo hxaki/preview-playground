@@ -1,3 +1,4 @@
+
 function spaceCheck() {
     var bodyRect = document.body.getBoundingClientRect();
     var el = document.querySelectorAll('a')[0];
@@ -13,6 +14,16 @@ function spaceCheck() {
     
         // if not enough space, check bottom
 }
+
+function testFakkuRequest() {
+    var req = new XMLHttpRequest();
+    req.open("GET", "https://api.fakku.net/doujinshi/cl-orz-32-english", false);
+    req.send();
+    response = JSON.parse(req.responseText);
+    req.abort();
+    return response;
+}
+
 window.addEventListener("resize", function() {console.log("RESIZED");});
 //dynamically generate the preview
 
