@@ -1,6 +1,13 @@
 .fpreview {
-    width:400px;
-    height:250px;
     background-color:aliceblue;
-    display:none;
 }
+
+.cover {
+    display: inline-block;
+}
+
+.content { 
+    display: inline-block;
+}
+
+
